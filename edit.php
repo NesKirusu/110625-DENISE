@@ -35,7 +35,7 @@ if ($query && mysqli_num_rows($query) > 0) {
         }
     </style>
     <div class="row w-100 p-5 bg-dark">
-        <h1 class="text-danger">KEVI MOTORS</h1>
+        <h1 class="text-danger">KEVI MOTORS - ADMIN</h1>
     </div>
     <div class="container-sm">
         <form method="post" action="edit.php">
