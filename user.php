@@ -3,6 +3,13 @@ ob_start();
 session_start();
 if (empty($_SESSION['email'])) {
     print "Login First";
+    print 
+    '<script>
+            setTimeout(function() {
+                window.location.href = "login.php";
+            }, 5000); // 5000ms = 5 seconds
+          </script>';
+
     exit();
 }
 ?>
@@ -26,8 +33,17 @@ if (empty($_SESSION['email'])) {
             <h1 class="text-danger">KEVI MOTORS</h1>
         </div>
         <div class="col">
-            <button class="btn btn-secondary">Orders</button>
-            <button class="btn btn-danger">Log Out</button>
+            <form action="user.php" method="post">
+                <a href="view_orders.php" class="btn btn-secondary">Orders</a>
+                <button class="btn btn-danger" type="submit" name="logout" value="logout">Log Out</button>
+            </form>
+            <?php
+            if(!empty($_POST['logout'])){
+                session_destroy();
+                header('location: login.php');
+                exit();
+            }
+            ?>
         </div>
     </div>
     <div class="container-sm align-items-center d-flex flex-column mt-5">

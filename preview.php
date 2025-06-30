@@ -3,6 +3,13 @@ ob_start();
 session_start();
 if (empty($_SESSION['email'])) {
     print "Login First";
+    print 
+    '<script>
+            setTimeout(function() {
+                window.location.href = "login.php";
+            }, 5000); // 5000ms = 5 seconds
+          </script>';
+
     exit();
 }
 ?>
@@ -21,8 +28,15 @@ if (empty($_SESSION['email'])) {
         }
         
     </style>
-    <div class="row w-100 py-5 bg-dark">
-        <h1 class="text-danger">KEVI MOTORS</h1>
+    <div class="row w-100 py-5 bg-dark align-items-center">
+        <div class="col">
+            <h1 class="text-danger m-0">KEVI MOTORS</h1>
+        </div>
+        <div class="col-auto  position-absolute">
+            <a href="user.php" class="btn btn-warning mx-5">
+                Return
+            </a>
+        </div>
     </div>
     <div class="container-sm">
     <form action="checkout.php" method="get">
