@@ -1,8 +1,17 @@
+<?php
+ob_start();
+session_start();
+if (empty($_SESSION['email'])) {
+    print "Login First";
+    exit();
+}
+?>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Passing</title>
+    <title>Preview</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 </head>
 <body style="display: grid; place-items: center;">
@@ -25,7 +34,7 @@
                 <div class="col">
                     <input class="w-100" type="text" name="car" value="
                     <?php
-                        $car = $_GET['car'];
+                        $car = trim($_GET['car']);
                         print "$car";
                     ?>
                     " readonly>
@@ -38,7 +47,7 @@
                 <div class="col w-100">
                 <input class="w-100" type="text" name="price" value="
                     <?php
-                        $price = $_GET['price'];
+                        $price = trim($_GET['price']);
                         print "$price";
                     ?>
                     " readonly>

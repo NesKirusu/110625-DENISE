@@ -1,8 +1,17 @@
+<?php
+ob_start();
+session_start();
+if (empty($_SESSION['email'])) {
+    print "Login First";
+    exit();
+}
+?>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Passing</title>
+    <title>Checkout</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 </head>
 <body style="display: grid; place-items: center;">
@@ -30,7 +39,7 @@
             <div class="col">
                 <input class="w-100" type="text" name="car" value="
                 <?php
-                    $car = $_GET['car'];
+                    $car = trim($_GET['car']);
                     print "$car";
                 ?>
                 " readonly>
@@ -43,7 +52,7 @@
                 <div class="col w-100">
                 <input class="w-100" type="text" name="price" value="
                     <?php
-                        $price = $_GET['price'];
+                        $price = trim($_GET['price']);
                         print "$price";
                     ?>
                     " readonly>
@@ -54,9 +63,9 @@
                 <h5>Item Quantity:</h5>
                 </div>
                 <div class="col w-100">
-                <input class="w-100" type="text" name="price" value="
+                <input class="w-100" type="text" name="quantity" value="
                     <?php
-                        $quantity = $_GET['quantity'];
+                        $quantity = trim($_GET['quantity']);
                         print "$quantity";
                     ?>
                     " readonly>
@@ -77,7 +86,21 @@
                         " readonly>
                 </div>
                 <div class="col">
-                    <a href="index.php" class="btn btn-primary">Return</a>
+                    <button type="submit" name="return" value="return" class="btn btn-primary">Return</button>
+                    <?php
+                        if(!empty($_GET['return'])){
+                            include("connection.php");
+                            $order_date = date("Y-m-d");
+                            $email = $_SESSION['email'];
+                            $item = trim($_GET['car']);
+                            $cost = $_GET['price'];
+                            $quantity = $_GET['quantity'];
+                            $amount = $price*$quantity;
+                            $query="INSERT INTO orders(order_date,email,item,cost,quantity,amount) values($order_date,'$email','$item',$cost,$quantity,$amount)";
+                            $result = mysqli_query($connection,$query);
+                            header("location: user.php");
+                        }
+                    ?>
                 </div>
             </div>
         </div>
