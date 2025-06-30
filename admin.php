@@ -9,7 +9,7 @@ if (empty($_SESSION['email'])) {
                 window.location.href = "login.php";
             }, 5000); // 5000ms = 5 seconds
           </script>';
-
+    //MORE DESIGN NEEEDED FOR REDIRECTION
     exit();
 }
 $email = $_SESSION['email'];
