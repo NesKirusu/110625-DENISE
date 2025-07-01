@@ -52,7 +52,7 @@ if (empty($_SESSION['email'])) {
             <div class="col">
                 <div class="row">
                     <div class="col">
-                        <img class="img-fluid object-fit-cover d-flex" src="img/tesla1.jpg" style="width: 50vw;">
+                        <img class="img-fluid object-fit-cover d-flex" src="img/tesla1.jpg" style="width: 50vw; height: 15vh;">
                     </div>
                 </div>
                 <div class="row">
@@ -74,7 +74,7 @@ if (empty($_SESSION['email'])) {
             <div class="col">
                 <div class="row">
                     <div class="col">
-                        <img class="img-fluid object-fit-cover d-flex" src="img/tesla2.jpg" style="width: 50vw;">
+                        <img class="img-fluid object-fit-cover d-flex" src="img/tesla2.jpg" style="width: 50vw; height: 15vh;">
                     </div>
                 </div>
                 <div class="row">
@@ -96,7 +96,7 @@ if (empty($_SESSION['email'])) {
             <div class="col">
                 <div class="row">
                     <div class="col">
-                        <img class="img-fluid object-fit-cover d-flex" src="img/images.jfif" style="width: 50vw;">
+                        <img class="img-fluid object-fit-cover d-flex" src="img/images.jfif" style="width: 50vw; height: 15vh;">
                     </div>
                 </div>
                 <div class="row">
@@ -118,7 +118,7 @@ if (empty($_SESSION['email'])) {
             <div class="col">
                 <div class="row">
                     <div class="col">
-                        <img class="img-fluid object-fit-cover d-flex" src="img/images2.jfif" style="width: 50vw;">
+                        <img class="img-fluid object-fit-cover d-flex" src="img/images2.jfif" style="width: 50vw; height: 15vh;">
                     </div>
                 </div>
                 <div class="row">
@@ -133,14 +133,14 @@ if (empty($_SESSION['email'])) {
                 </div>
                 <div class="row">
                     <div class="col">
-                        <a class="btn btn-primary" href="preview.php?car=Tesla model X & price=2000000">Add to Cart</a>
+                        <a class="btn btn-primary" href="preview.php?car=CYBERTRUCK & price=2000000">Add to Cart</a>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="row">
                     <div class="col">
-                        <img class="img-fluid object-fit-cover d-flex" src="img/images3.jfif" style="width: 50vw;">
+                        <img class="img-fluid object-fit-cover d-flex" src="img/images3.jfif" style="width: 50vw; height: 15vh;">
                     </div>
                 </div>
                 <div class="row">
@@ -166,7 +166,7 @@ if (empty($_SESSION['email'])) {
             <div class="col">
                 <div class="row">
                     <div class="col">
-                        <img class="img-fluid object-fit-cover d-flex" src="img/toyota.webp" style="width: 50vw;">
+                        <img class="img-fluid object-fit-cover d-flex" src="img/toyota.webp" style="width: 50vw; height: 15vh;">
                     </div>
                 </div>
                 <div class="row">
@@ -189,7 +189,7 @@ if (empty($_SESSION['email'])) {
             <div class="col">
                 <div class="row">
                     <div class="col">
-                        <img class="img-fluid object-fit-cover d-flex" src="img/images4.jfif" style="width: 50vw;">
+                        <img class="img-fluid object-fit-cover d-flex" src="img/images4.jfif" style="width: 50vw; height: 15vh;">
                     </div>
                 </div>
                 <div class="row">
@@ -211,7 +211,7 @@ if (empty($_SESSION['email'])) {
             <div class="col">
                 <div class="row">
                     <div class="col">
-                        <img class="img-fluid object-fit-cover d-flex" src="img/toyota1.jpg" style="width: 50vw;">
+                        <img class="img-fluid object-fit-cover d-flex" src="img/toyota1.jpg" style="width: 50vw; height: 15vh;">
                     </div>
                 </div>
                 <div class="row">
@@ -233,7 +233,7 @@ if (empty($_SESSION['email'])) {
             <div class="col">
                 <div class="row">
                     <div class="col">
-                        <img class="img-fluid object-fit-cover d-flex" src="img/toyota2.jpg" style="width: 50vw;">
+                        <img class="img-fluid object-fit-cover d-flex" src="img/toyota2.jpg" style="width: 50vw; height: 15vh;">
                     </div>
                 </div>
                 <div class="row">
@@ -255,7 +255,7 @@ if (empty($_SESSION['email'])) {
             <div class="col">
                 <div class="row">
                     <div class="col">
-                        <img class="img-fluid object-fit-cover d-flex" src="img/images5.jfif" style="width: 50vw;">
+                        <img class="img-fluid object-fit-cover d-flex" src="img/images5.jfif" style="width: 50vw; height: 15vh;">
                     </div>
                 </div>
                 <div class="row">
@@ -281,7 +281,7 @@ if (empty($_SESSION['email'])) {
             <div class="col">
                 <div class="row">
                     <div class="col">
-                        <img class="img-fluid object-fit-cover d-flex" src="img/tesla1.jpg" style="width: 50vw;">
+                        <img class="img-fluid object-fit-cover d-flex" src="img/tesla1.jpg" style="width: 50vw; height: 15vh;">
                     </div>
                 </div>
                 <div class="row">
@@ -303,7 +303,7 @@ if (empty($_SESSION['email'])) {
             <div class="col">
                 <div class="row">
                     <div class="col">
-                        <img class="img-fluid object-fit-cover d-flex" src="img/BYD1.webp" style="width: 50vw;">
+                        <img class="img-fluid object-fit-cover d-flex" src="img/BYD1.webp" style="width: 50vw; height: 15vh;">
                     </div>
                 </div>
                 <div class="row">
@@ -325,7 +325,7 @@ if (empty($_SESSION['email'])) {
             <div class="col">
                 <div class="row">
                     <div class="col">
-                        <img class="img-fluid object-fit-cover d-flex" src="img/BYD2.webp" style="width: 50vw;">
+                        <img class="img-fluid object-fit-cover d-flex" src="img/BYD2.webp" style="width: 50vw; height: 15vh;">
                     </div>
                 </div>
                 <div class="row">
@@ -347,7 +347,7 @@ if (empty($_SESSION['email'])) {
             <div class="col">
                 <div class="row">
                     <div class="col">
-                        <img class="img-fluid object-fit-cover d-flex" src="img/BYD3.webp" style="width: 50vw;">
+                        <img class="img-fluid object-fit-cover d-flex" src="img/BYD3.webp" style="width: 50vw; height: 15vh;">
                     </div>
                 </div>
                 <div class="row">
@@ -369,7 +369,7 @@ if (empty($_SESSION['email'])) {
             <div class="col">
                 <div class="row">
                     <div class="col">
-                        <img class="img-fluid object-fit-cover d-flex" src="img/BYD4.webp" style="width: 50vw;">
+                        <img class="img-fluid object-fit-cover d-flex" src="img/BYD4.webp" style="width: 50vw; height: 15vh;">
                     </div>
                 </div>
                 <div class="row">
@@ -395,7 +395,7 @@ if (empty($_SESSION['email'])) {
             <div class="col">
                 <div class="row">
                     <div class="col">
-                        <img class="img-fluid object-fit-cover d-flex" src="img/BYD5.webp" style="width: 50vw;">
+                        <img class="img-fluid object-fit-cover d-flex" src="img/BYD5.webp" style="width: 50vw; height: 15vh;">
                     </div>
                 </div>
                 <div class="row">
@@ -417,7 +417,7 @@ if (empty($_SESSION['email'])) {
             <div class="col">
                 <div class="row">
                     <div class="col">
-                        <img class="img-fluid object-fit-cover d-flex" src="img/mitsu5.webp" style="width: 50vw;">
+                        <img class="img-fluid object-fit-cover d-flex" src="img/mitsu5.webp" style="width: 50vw; height: 15vh;">
                     </div>
                 </div>
                 <div class="row">
@@ -439,7 +439,7 @@ if (empty($_SESSION['email'])) {
             <div class="col">
                 <div class="row">
                     <div class="col">
-                        <img class="img-fluid object-fit-cover d-flex" src="img/mitsu1.webp" style="width: 50vw;">
+                        <img class="img-fluid object-fit-cover d-flex" src="img/mitsu1.webp" style="width: 50vw; height: 15vh;">
                     </div>
                 </div>
                 <div class="row">
@@ -461,7 +461,7 @@ if (empty($_SESSION['email'])) {
             <div class="col">
                 <div class="row">
                     <div class="col">
-                        <img class="img-fluid object-fit-cover d-flex" src="img/mitsu2.webp" style="width: 50vw;">
+                        <img class="img-fluid object-fit-cover d-flex" src="img/mitsu2.webp" style="width: 50vw; height: 15vh;">
                     </div>
                 </div>
                 <div class="row">
@@ -483,7 +483,7 @@ if (empty($_SESSION['email'])) {
             <div class="col">
                 <div class="row">
                     <div class="col">
-                        <img class="img-fluid object-fit-cover d-flex" src="img/mitsu3.webp" style="width: 50vw;">
+                        <img class="img-fluid object-fit-cover d-flex" src="img/mitsu3.webp" style="width: 50vw; height: 15vh;">
                     </div>
                 </div>
                 <div class="row">
@@ -509,7 +509,7 @@ if (empty($_SESSION['email'])) {
             <div class="col">
                 <div class="row">
                     <div class="col">
-                        <img class="img-fluid object-fit-cover d-flex" src="img/mitsu4.webp" style="width: 50vw;">
+                        <img class="img-fluid object-fit-cover d-flex" src="img/mitsu4.webp" style="width: 50vw; height: 15vh;">
                     </div>
                 </div>
                 <div class="row">
@@ -531,7 +531,7 @@ if (empty($_SESSION['email'])) {
             <div class="col">
                 <div class="row">
                     <div class="col">
-                        <img class="img-fluid object-fit-cover d-flex" src="img/mazda1.webp" style="width: 50vw;">
+                        <img class="img-fluid object-fit-cover d-flex" src="img/mazda1.webp" style="width: 50vw; height: 15vh;">
                     </div>
                 </div>
                 <div class="row">
@@ -554,7 +554,7 @@ if (empty($_SESSION['email'])) {
             <div class="col">
                 <div class="row">
                     <div class="col">
-                        <img class="img-fluid object-fit-cover d-flex" src="img/mazda2.webp" style="width: 50vw;">
+                        <img class="img-fluid object-fit-cover d-flex" src="img/mazda2.webp" style="width: 50vw; height: 15vh;">
                     </div>
                 </div>
                 <div class="row">
@@ -576,7 +576,7 @@ if (empty($_SESSION['email'])) {
             <div class="col">
                 <div class="row">
                     <div class="col">
-                        <img class="img-fluid object-fit-cover d-flex" src="img/mazda3.webp" style="width: 50vw;">
+                        <img class="img-fluid object-fit-cover d-flex" src="img/mazda3.webp" style="width: 50vw; height: 15vh;">
                     </div>
                 </div>
                 <div class="row">
@@ -598,7 +598,7 @@ if (empty($_SESSION['email'])) {
             <div class="col">
                 <div class="row">
                     <div class="col">
-                        <img class="img-fluid object-fit-cover d-flex" src="img/mazda4.webp" style="width: 50vw;">
+                        <img class="img-fluid object-fit-cover d-flex" src="img/mazda4.webp" style="width: 50vw; height: 15vh;">
                     </div>
                 </div>
                 <div class="row">

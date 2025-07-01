@@ -12,12 +12,55 @@ ob_start();
     <link rel="stylesheet" href="animations.css">
 </head>
 
-<body>
+<body class="position-relative">
     <style>
         body * {
             text-align: center;
         }
     </style>
+
+    <!-- BG -->
+    <style>
+        .square {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 1;
+            border: 2px solid black;
+            margin: 30px;
+            transform: rotate(45deg);
+        }
+        .square::after {
+            position: absolute;
+            content: '';
+            top: 0;
+            width: 100%;
+            aspect-ratio: 1;
+            border: 2px solid green;
+            margin: 30px;
+            transform: translate(-100%, 100%);
+        }
+        .square:hover {
+            scale: 110%;
+        }
+    </style>
+    <div class="container-fluid position-absolute" style="z-index: -1; overflow: hidden; height: 100%;">
+        <div class="row" style="scale: 110%;">
+            <?php
+            $count = 100;
+            $ctr = 1;
+            while ($ctr <= $count) {
+                print '
+                    <div class="col-1 d-flex">
+                        <div class="square"></div>
+                    </div>
+                    ';
+                $ctr++;
+            }
+            ?>
+        </div>
+    </div>
+    <!-- BG -->
+
     <div class="row w-100 py-5 bg-dark">
         <div class="col">
             <h1 class="text-danger">KEVI MOTORS</h1>

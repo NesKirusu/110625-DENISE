@@ -77,6 +77,47 @@ $email = $_SESSION['email'];
             text-align: center;
         }
     </style>
+
+    
+    <!-- AI CHATBOT -->
+    <script type="module">
+        import Chatbox from 'https://cdn.jsdelivr.net/npm/@chaindesk/embeds@latest/dist/chatbox/index.js';
+
+        const widget = await Chatbox.initBubble({
+            agentId: 'cmcjqe8ks012wqq45ci8kr7er',
+
+            // optional 
+            // If provided will create a contact for the user and link it to the conversation
+            contact: {
+                firstName: 'Admin',
+                lastName: 'Admin',
+                email: 'customer@email.com',
+                phoneNumber: '+33612345644',
+                userId: '42424242',
+            },
+            // optional
+            // Override initial messages
+            initialMessages: [
+                'Hello Georges how are you doing today?',
+                'How can I help you ?',
+            ],
+            // optional
+            // Provided context will be appended to the Agent system prompt
+            context: "The user you are talking to is John. Start by Greeting him by his name.",
+        });
+
+        // open the chat bubble
+        widget.open();
+
+        // close the chat bubble
+        widget.close()
+
+        // or 
+        widget.toggle()
+    </script>
+    <!-- AI CHATBOT -->
+
+
     <div class="row w-100 py-5 bg-dark align-items-center">
         <div class="col">
             <h1 class="text-danger">KEVI MOTORS - ADMIN</h1>
@@ -232,13 +273,20 @@ $email = $_SESSION['email'];
                 }
                 ?>
                 <script>
-                    window.onload = function () {
+                    window.onload = function() {
                         var chart1 = new CanvasJS.Chart("chartContainer1", {
                             animationEnabled: true,
                             theme: "light2",
-                            title: { text: "Total Orders Per Day" },
-                            axisX: { title: "Date", valueFormatString: "YYYY-MM-DD" },
-                            axisY: { title: "Number of Orders" },
+                            title: {
+                                text: "Total Orders Per Day"
+                            },
+                            axisX: {
+                                title: "Date",
+                                valueFormatString: "YYYY-MM-DD"
+                            },
+                            axisY: {
+                                title: "Number of Orders"
+                            },
                             data: [{
                                 type: "line",
                                 xValueType: "dateTime",
@@ -250,9 +298,16 @@ $email = $_SESSION['email'];
                         var chart2 = new CanvasJS.Chart("chartContainer2", {
                             animationEnabled: true,
                             theme: "light2",
-                            title: { text: "Revenue Per Day" },
-                            axisX: { title: "Date", valueFormatString: "YYYY-MM-DD" },
-                            axisY: { title: "Revenue (PHP)" },
+                            title: {
+                                text: "Revenue Per Day"
+                            },
+                            axisX: {
+                                title: "Date",
+                                valueFormatString: "YYYY-MM-DD"
+                            },
+                            axisY: {
+                                title: "Revenue (PHP)"
+                            },
                             data: [{
                                 type: "column",
                                 xValueType: "dateTime",
@@ -264,7 +319,9 @@ $email = $_SESSION['email'];
                         var chart3 = new CanvasJS.Chart("chartContainer3", {
                             animationEnabled: true,
                             theme: "light2",
-                            title: { text: "Orders by Item" },
+                            title: {
+                                text: "Orders by Item"
+                            },
                             data: [{
                                 type: "pie",
                                 startAngle: 240,
@@ -278,9 +335,16 @@ $email = $_SESSION['email'];
                         var chart4 = new CanvasJS.Chart("chartContainer4", {
                             animationEnabled: true,
                             theme: "light2",
-                            title: { text: "Top 5 Customers by Revenue" },
-                            axisX: { title: "Revenue (PHP)" },
-                            axisY: { title: "Customer", reversed: true },
+                            title: {
+                                text: "Top 5 Customers by Revenue"
+                            },
+                            axisX: {
+                                title: "Revenue (PHP)"
+                            },
+                            axisY: {
+                                title: "Customer",
+                                reversed: true
+                            },
                             data: [{
                                 type: "bar",
                                 dataPoints: <?php echo json_encode($dataPoints4, JSON_NUMERIC_CHECK); ?>
@@ -291,9 +355,15 @@ $email = $_SESSION['email'];
                         var chart5 = new CanvasJS.Chart("chartContainer5", {
                             animationEnabled: true,
                             theme: "light2",
-                            title: { text: "Monthly Sales Trend" },
-                            axisX: { title: "Month" },
-                            axisY: { title: "Sales (PHP)" },
+                            title: {
+                                text: "Monthly Sales Trend"
+                            },
+                            axisX: {
+                                title: "Month"
+                            },
+                            axisY: {
+                                title: "Sales (PHP)"
+                            },
                             data: [{
                                 type: "area",
                                 dataPoints: <?php echo json_encode($dataPoints5, JSON_NUMERIC_CHECK); ?>
